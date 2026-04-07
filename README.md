@@ -1,4 +1,17 @@
-# Machine Learning Algorithms Collection
+# Machine Learning Algorithms Practice
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![NumPy](https://img.shields.io/badge/NumPy-Used-orange?logo=numpy)
+![Pandas](https://img.shields.io/badge/Pandas-Used-purple?logo=pandas)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-yellow?logo=scikitlearn)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-green)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-red?logo=jupyter)
+
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Core-blue)
+![Reinforcement Learning](https://img.shields.io/badge/Reinforcement%20Learning-Added-success)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+
+---
 
 A hands-on collection of **Machine Learning algorithms implemented and practiced while learning ML fundamentals**.
 
@@ -10,7 +23,7 @@ Some algorithms are implemented using **Scikit-learn**, while others are impleme
 
 # Repository Overview
 
-This repository contains implementations of **Supervised Learning** and **Unsupervised Learning** algorithms commonly used in Machine Learning.
+This repository contains implementations of **Supervised Learning**, **Unsupervised Learning**, and **Reinforcement Learning** algorithms commonly used in Machine Learning.
 
 ```
 machine_learning_algorithms
@@ -25,12 +38,18 @@ machine_learning_algorithms
 │   ├── Boosting
 │   └── lasso-ridge-regression
 │
-└── unsupervised_learning
-    ├── Kmeans_clustering
-    ├── hierarchical_clustering
-    ├── DBSCAN
-    ├── PCA
-    └── anomaly_detection
+├── unsupervised_learning
+│   ├── Kmeans_clustering
+│   ├── hierarchical_clustering
+│   ├── DBSCAN
+│   ├── PCA
+│   └── anomaly_detection
+│
+└── reinforcement_learning
+    ├── Q_learning
+    ├── SARSA
+    ├── Flappy_Bird_AI
+    └── other_experiments
 ```
 
 ---
@@ -103,7 +122,7 @@ Combining multiple models to improve performance.
 
 #### Bagging / Random Forest
 
-* Ensemble learning using bagging techniques.
+* Ensemble learning using bagging techniques
 
 #### Boosting
 
@@ -147,6 +166,54 @@ Used to reduce feature dimensions while preserving important information.
 ### Anomaly Detection
 
 Techniques used to detect **outliers or unusual data points** in datasets.
+
+---
+
+# Reinforcement Learning
+
+Reinforcement Learning focuses on training agents to make decisions by interacting with an environment and learning from rewards and penalties.
+
+This folder contains practical implementations and experiments to understand how agents learn optimal behavior over time.
+
+### Algorithms Covered
+
+* **Q-Learning**
+
+  * Value-based learning algorithm
+  * Uses Q-table to learn optimal actions
+  * Focus on exploration vs exploitation
+
+* **SARSA (State-Action-Reward-State-Action)**
+
+  * On-policy learning algorithm
+  * Updates values based on actions actually taken
+  * More stable but sometimes slower than Q-learning
+
+---
+
+### Project: Flappy Bird AI
+
+A practical implementation where a reinforcement learning agent learns to play the Flappy Bird game.
+
+Includes:
+
+* Environment interaction
+* Reward-based learning
+* State-action decision making
+* Continuous improvement through episodes
+
+---
+
+### What I Learned
+
+* Difference between **supervised vs reinforcement learning**
+* How agents learn using **rewards and penalties**
+* Concepts like:
+
+  * Exploration vs Exploitation
+  * Q-table updates
+  * Policy learning
+* Real-world simulation using a game environment
 
 ---
 
